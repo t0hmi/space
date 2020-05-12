@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+}
+/* -- import font --*/
+
+/* -- Header -- */
+header {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  height: 90px;
+  align-items: center;
+  z-index: 500;
+}
+header img {
+  height: 100%;
+}
+nav ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(50px at 90% -10%);
+  transition: all 1s ease;
+}
+.active {
+  clip-path: circle(1550px at 90% -10%);
+}
+nav ul li {
+  padding: 2em;
+  list-style: none;
+}
+nav ul li a {
+  font-size: 2em;
+  color: #ff3e3e;
+  text-decoration: none;
+}
+.burger {
+  cursor: pointer;
+  margin-right: 1em;
+  z-index: 40;
+}
+.trait {
+  transition: all 0.5s ease;
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.change .trait:nth-child(1) {
+  transform: rotate(45deg) translate(18px, 19px);
+}
+.change .trait:nth-child(2) {
+  opacity: 0;
+}
+.change .trait:nth-child(3) {
+  transform: rotate(-45deg) translate(0px, 0px);
+}
+/*-- Spaceship background -- */
+
+.space-background {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 30%;
+  background: url(images/espaceFusee.jpg);
+  background-position-x: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  z-index: -1;
+}
+/*-- div homepage txt --*/
+.txt-homepage {
+  margin: 5em 10em 5em 1em;
+}
+.txt-homepage h1 {
+  width: 70%;
+  margin-bottom: 1.5em;
+}
+.txt-homepage h1 strong {
+  color: #ff3e3e;
+}
+button:focus {
+  outline: none;
+}
+.txt-homepage button {
+  cursor: pointer;
+  border: none;
+  background: #ff3e3e;
+  padding: 1em;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 0px 0px 25px #ff3e3e;
+}
+.fa-arrow-right {
+  transition: all 0.5s ease;
+}
+.txt-homepage button:hover .fa-arrow-right {
+  transition: all 0.5s ease;
+  transform: translateX(5px);
+}
+.fa-arrow-right {
+  margin-left: 20px;
+}
+/*-- Mars --*/
+.mars {
+  position: relative;
+  display: flex;
+  margin-left: 0;
+  margin-top: 10em;
+  width: 80%;
+  background: #ff3e3e;
+  height: 250px;
+}
+.mars-image {
+  width: 50%;
+  height: 100%;
+  background: url(images/mars.png);
+  background-size: cover;
+}
+.mars-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5px;
+  width: 40%;
+  font-size: 1.5em;
+}
+.mars-text button {
+  align-self: center;
+  margin-top: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: #000000;
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.3),
+    5px 5px 15px rgba(0, 0, 0, 0.3), inset 5px 5px 10px rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  padding: 1em;
+  width: 80px;
+}
+.block {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: rgba(0, 0, 0, 0.55);
+}
+.b1 {
+  bottom: 0;
+  right: 2em;
+}
+.b2 {
+  bottom: 2em;
+  right: 0;
+}
+aside {
+  display: none;
+}
+/*-- the trip --*/
+.trip {
+  margin-top: 10em;
+}
+.trip h1 {
+  position: relative;
+  font-size: 3em;
+  text-align: center;
+  margin: 1em;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+.img-fond {
+  display: none;
+  opacity: 0;
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  max-width: 300px;
+  height: 500px;
+  border: solid black 3px;
+  margin: 3em;
+  background: white;
+}
+
+.container .card .img-box {
+  align-self: center;
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  box-shadow: black -15px -15px 25px -15px;
+}
+.container .card .img-box img {
+  height: 100%;
+  border-radius: 5px;
+}
+.container .card .card-content {
+  margin-top: -30px;
+  padding: 1em;
+}
+.container .card:hover .buy {
+  height: 250px;
+}
+.container .card:hover .buy button {
+  opacity: 1;
+}
+.buy {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  background: #ff3e3e;
+  height: 0;
+  transition: all 0.5s ease;
+}
+.buy button {
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 20px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.fa-shopping-cart {
+  transition: all 0.5s ease;
+  margin-left: 5px;
+}
+.buy button:hover .fa-shopping-cart {
+  transform: rotateZ(10deg);
+}
+
+@media (min-width: 600px) {
+  /*-- header --*/
+  header nav ul {
+    display: flex;
+    position: relative;
+    clip-path: none;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+  }
+  header nav ul li {
+    display: inline-block;
+  }
+  header nav ul li a {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+  }
+  .burger {
+    display: none;
+  }
+  /*-- text presentation --*/
+  .txt-homepage {
+    margin: 5em 10em 5em 6em;
+  }
+  .txt-homepage h1 {
+    margin-bottom: 2em;
+  }
+  .txt-homepage h1 strong {
+    color: #ff3e3e;
+  }
+  /*-- aside --*/
+  aside {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #ff3e3e;
+    width: 50px;
+    border-radius: 0px 30px 30px 0px;
+    height: 300px;
+    top: 180px;
+    left: 0;
+    position: absolute;
+  }
+  .fa-twitter-square,
+  .fa-facebook-square,
+  .fa-instagram,
+  .fa-paper-plane {
+    color: white;
+    padding: 1em;
+    transition: all 0.5s ease;
+  }
+  .fa-twitter-square:hover,
+  .fa-facebook-square:hover,
+  .fa-instagram:hover,
+  .fa-paper-plane:hover {
+    color: #000000;
+  }
+}
+@media (min-width: 870px) {
+  /*-- txt presentation --*/
+  .txt-homepage h1 {
+    font-size: 3rem;
+  }
+  .img-fond {
+    display: inline-block;
+    opacity: 1;
+    position: absolute;
+    width: 70vw;
+    height: 70vh;
+    z-index: -10;
+  }
+  /*-- Mars --*/
+  .mars {
+    width: 75%;
+    height: 350px;
+    margin-top: 9em;
+  }
+  .space-background {
+    height: 95vh;
+  }
+  .mars-text {
+    align-self: center;
+    margin: 1em;
+  }
+  .mars-text p {
+    font-size: 1.5em;
+  }
+  .mars-text button {
+    align-self: flex-start;
+  }
+  /*-- aside --*/
+  aside {
+    font-size: 1.5em;
+  }
+  .fa-twitter-square,
+  .fa-facebook-square,
+  .fa-instagram,
+  .fa-paper-plane {
+    color: white;
+    padding: 0.5em;
+  }
+}
