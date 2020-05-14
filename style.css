@@ -87,6 +87,9 @@ nav ul li a {
   width: 70%;
   margin-bottom: 1.5em;
 }
+.txt-homepage h2{
+  display: none;
+}
 .txt-homepage h1 strong {
   color: #ff3e3e;
 }
@@ -218,6 +221,9 @@ aside {
   margin-top: -30px;
   padding: 1em;
 }
+.card-content h2{
+  color: #ff3e3e;
+}
 .container .card:hover .buy {
   height: 250px;
 }
@@ -284,7 +290,14 @@ aside {
     margin: 5em 10em 5em 6em;
   }
   .txt-homepage h1 {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+  }
+  .txt-homepage h2{
+    display: block;
+    opacity: 0.5;
+    font-style: italic;
+    width: 70%;
+    margin-bottom: 1em;
   }
   .txt-homepage h1 strong {
     color: #ff3e3e;
@@ -343,6 +356,7 @@ aside {
     align-self: center;
     margin: 1em;
   }
+
   .mars-text p {
     font-size: 1.5em;
   }
