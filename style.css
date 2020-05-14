@@ -298,6 +298,7 @@ margin: 1em;
 .spacship-info-content h3{
   color: #ff3e3e;
   font-size: calc(0.5vw + 0.5em);
+  text-shadow: black 0 0 1px;
 }
 .spacship-info-content p{
   margin: 0.1em;
@@ -426,5 +427,11 @@ margin: 1em;
   /*-- spaceShip --*/
   .spaceship-background{
     right: -400px;
+  }
+  .spacship-info-content:nth-child(2){
+    border-top: none;
+    border-bottom: none;
+    border-left :  black solid 3px ;
+    border-right: black solid 3px ;
   }
 }
