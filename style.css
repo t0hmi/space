@@ -260,10 +260,15 @@ aside {
     position: relative;
     clip-path: none;
     flex-direction: row;
-    height: auto;
+    height: 100%;
+    align-items: center;
     width: auto;
   }
   header nav ul li {
+    padding-right: 1em;
+    padding-top: 20px ;
+    align-items: center;
+    padding-left: 1em;
     display: inline-block;
   }
   header nav ul li a {
