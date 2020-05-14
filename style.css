@@ -259,6 +259,13 @@ aside {
 .buy button:hover .fa-shopping-cart {
   transform: rotateZ(10deg);
 }
+/*--- The spaceShip ---*/
+.spaceShip{
+  position: relative;
+font-size: 3em;
+text-align: center;
+margin: 1em;
+}
 
 @media (min-width: 600px) {
   /*-- header --*/
