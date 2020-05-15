@@ -1,169 +1,192 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SpaceTour</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Barlow&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
-      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--Header-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
     <header>
-      <img src="images/logoheader.png" alt="logo" />
-      <nav>
-        <ul>
-          <li><a href="#">TRIP</a></li>
-          <li><a href="#">SPACESHIP</a></li>
-          <li><a href="#">TEAM</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
-      <div class="burger">
-        <div class="trait"></div>
-        <div class="trait"></div>
-        <div class="trait"></div>
-      </div>
+        <img src="images/logoheader.png" alt="logo" />
+        <div class="web">
+            <nav>
+                <ul>
+                    <li><a href="#">TRIP</a></li>
+                    <li><a href="#">SPACESHIP</a></li>
+                    <li><a href="#">TEAM</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burgerMenu">
+            <input id="burger" type="checkbox" />
+
+            <label for="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav>
+                <ul>
+                    <li><a href="#">TRIP</a></li>
+                    <li><a href="#">SPACESHIP</a></li>
+                    <li><a href="#">TEAM</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <!--SpaceShip Background-->
-    <div class="space-background"></div>
-    <!--Aside-->
-    <aside>
-      <i class="fab fa-twitter-square"></i>
-      <i class="fab fa-facebook-square"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fas fa-paper-plane"></i>
-    </aside>
-    <!--Text + button homepage-->
-    <div class="txt-homepage">
-      <h1>The space and our team are waitting for <strong>YOU</strong> !</h1>
-      <h2>Space tour are no longer a dream, it's a reality !</h2>
-      <button><p>Discover now</p> <i class="fas fa-arrow-right"></i></button>
-    </div>
-    <!-- Div with Mars-->
-    <div class="mars">
-      <div class="mars-image"></div>
-      <div class="mars-text">
-        <div><p>Mars is now available in our space tour !</p>
-          <button>Book</button>
-        </div>
-        
-      </div>
-      <div class="block b1"></div>
-      <div class="block b2"></div>
-    </div>
-    <section class="trip">
-      <h1>The trip</h1>
-      <div class="container">
-        <div class="card">
-          <div class="img-box">
-            <img src="images/mars.png" alt="mars" />
-          </div>
-          <div class="card-content">
-            <h2>Mars</h2>
-            <p>
-              <strong>Mars</strong> is our newest and pretigious tour, our team is very proud and happy to bring you in Mars.
-              The trip duration is <strong>8 months</strong>, during this periods you will be cryogenic so don't worry ! 
-              The starting price for this tour is : <strong>9.000.000 $</strong>, take your places quickly and write the history with us!
-            </p>
-          </div>
-          <div class="buy">
-            <button>Buy now <i class="fas fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="img-box">
-            <img src="images/jupiter.png" alt="mars" style="transform: rotate(180deg);"/>
-          </div>
-          <div class="card-content">
-            <h2>Jupiter</h2>
-            <p>
-              <strong>Jupiter</strong> is our biggest and odious tour, our team are working non stop on this tour for make him reality.
-              The trip is <strong>not available</strong> for the moment but you can still book your place ! 
-              The starting price for this tour is : <strong>10.000.000 $</strong>, take your places and support our research and developement team !
-            </p>
-          </div>
-          <div class="buy">
-            <button>Buy now <i class="fas fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="img-box">
-            <img src="images/moon.png" alt="mars" />
-          </div>
-          <div class="card-content">
-            <h2>Moon</h2>
-            <p>
-              <strong>Moon</strong> is our popular and fast tour
-              The trip duration is <strong>1 week</strong>, if you are affraid of the space, this tour is perfect to start exploring the space ! 
-              The starting price for this tour is : <strong>800.000 $</strong>, but don't worry, this tour take place every week so what are you waitting for ?
-            </p>
-          </div>
-          <div class="buy">
-            <button>Buy now <i class="fas fa-shopping-cart"></i></button>
-          </div>
-        </div>
+    <main>
+        <section id="home">
+            <div class="space-background"></div>
+            <aside>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fas fa-paper-plane"></i>
+            </aside>
+            <div class="txt-homepage">
+                <h1>The space and our team are waitting for <strong>YOU</strong> !</h1>
+                <h2>Space tour are no longer a dream, it's a reality !</h2>
+                <button>
+                    <p>Discover now</p> <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="mars">
+                <div class="mars-image"></div>
+                <div class="mars-text">
+                    <p>Mars is now available in our space tour !</p>
+                    <button>Book</button>
+                </div>
+                <div class="block b1"></div>
+                <div class="block b2"></div>
+            </div>
+        </section>
+        <section class="trip">
+            <h1>The trip</h1>
+            <div class="container">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/mars.png" alt="mars" />
+                    </div>
+                    <div class="card-content">
+                        <h2>Mars</h2>
+                        <p>
+                            <strong>Mars</strong> is our newest and pretigious tour, our team is very proud and happy to
+                            bring you in Mars.
+                            The trip duration is <strong>8 months</strong>, during this periods you will be cryogenic so
+                            don't worry !
+                            The starting price for this tour is : <strong>9.000.000 $</strong>, take your places quickly
+                            and write the history with us!
+                        </p>
+                    </div>
+                    <div class="buy">
+                        <h5>9.000.000 $</h5>
+                        <button>Buy now <i class="fas fa-shopping-cart"></i></button>
 
-        <img src="images/fond5.png" alt="fond" class="img-fond" />
-      </div>
-    </section>
-    <section class="spaceShip">
-      <h1>The spaceShip</h1>
-      <div class="spaceship-container">
-        <div class="spaceship-content">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/jupiter.png" alt="mars" style="transform: rotate(180deg);" />
+                    </div>
+                    <div class="card-content">
+                        <h2>Jupiter</h2>
+                        <p>
+                            <strong>Jupiter</strong> is our biggest and odious tour, our team are working non stop on
+                            this tour for make him reality.
+                            The trip is <strong>not available</strong> for the moment but you can still book your place
+                            !
+                            The starting price for this tour is : <strong>10.000.000 $</strong>, take your places and
+                            support our research and developement team !
+                        </p>
+                    </div>
+                    <div class="buy">
+                        <button>Buy now <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/moon.png" alt="mars" />
+                    </div>
+                    <div class="card-content">
+                        <h2>Moon</h2>
+                        <p>
+                            <strong>Moon</strong> is our popular and fast tour
+                            The trip duration is <strong>1 week</strong>, if you are affraid of the space, this tour is
+                            perfect to start exploring the space !
+                            The starting price for this tour is : <strong>800.000 $</strong>, but don't worry, this tour
+                            take place every week so what are you waitting for ?
+                        </p>
+                    </div>
+                    <div class="buy">
+                        <button>Buy now <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
 
-        </div>
-      <img src="images/fuseeClicArea 2.png" style="width: 100%;">
-       <div class="spaceship-info">
-         <div class="spacship-info-content">
-           <h3>The shuttle space</h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatum quo, rem nobis delectus consectetur, eius fuga voluptas, libero beatae eaque totam ipsa architecto magnam rerum provident temporibus voluptates velit.</p>
-         </div>
-         <div class="spacship-info-content">
-          <h3>Some numbers</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatum quo, rem nobis delectus consectetur, eius fuga voluptas, libero beatae eaque totam ipsa architecto magnam rerum provident temporibus voluptates velit.</p>
-         </div>
-         
-         <div class="spacship-info-content">
-          <h3>100% fiability</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatum quo, rem nobis delectus consectetur, eius fuga voluptas, libero beatae eaque totam ipsa architecto magnam rerum provident temporibus voluptates velit.</p>
-         </div>
-        
-       </div>
-       <h1 class="spaceship-background">SHUTTLE SPACE</h1>
-      </div>
-    </section>
-    <section>
-      <div class="crew-info">
-        <div class="crew-info-content">
-          <img src="images/astronaute.jpg" alt="AstronautCrew">
-          <h3>Name</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatum quo, rem nobis delectus consectetur, eius fuga voluptas, libero beatae eaque totam ipsa architecto magnam rerum provident temporibus voluptates velit.</p>
-        </div>
-        <div class="crew-info-content">
-          <img src="images/astronaute.jpg" alt="AstronautCrew">
-         <h3>Name</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatum quo, rem nobis delectus consectetur, eius fuga voluptas, libero beatae eaque totam ipsa architecto magnam rerum provident temporibus voluptates velit.</p>
-        </div>
-        
-        <div class="crew-info-content">
-          <img src="images/astronaute.jpg" alt="AstronautCrew">
-         <h3>Name</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatum quo, rem nobis delectus consectetur, eius fuga voluptas, libero beatae eaque totam ipsa architecto magnam rerum provident temporibus voluptates velit.</p>
-        </div>
-       
-      </div>
-    </section>
-    <script src="app.js"></script>
-  </body>
+                <!--<img src="images/fond5.png" alt="fond" class="img-fond" />-->
+            </div>
+        </section>
+        <section class="spaceShip">
+            <h1>The spaceShip</h1>
+                <div class="spaceship-content">
+                </div>
+                <img src="images/fuseeClicArea 2.png" style="width: 100%;">
+                <div class="spaceship-info">
+                    <div class="spacship-info-content">
+                        <h3>The shuttle space</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatum quo, rem nobis
+                            delectus consectetur, eius fuga voluptas, libero beatae eaque totam ipsa architecto magnam
+                            rerum provident temporibus voluptates velit.</p>
+                    </div>
+                    <div class="spacship-info-content">
+                        <h3>Some numbers</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatum quo, rem nobis
+                            delectus consectetur, eius fuga voluptas, libero beatae eaque totam ipsa architecto magnam
+                            rerum provident temporibus voluptates velit.</p>
+                    </div>
+
+                    <div class="spacship-info-content">
+                        <h3>100% fiability</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatum quo, rem nobis
+                            delectus consectetur, eius fuga voluptas, libero beatae eaque totam ipsa architecto magnam
+                            rerum provident temporibus voluptates velit.</p>
+                    </div>
+
+                </div>
+                <h1 class="spaceship-background">ROCKET</h1>
+        </section>
+        <section id="crew">
+            <h1>CREW</h1>
+            <div class="crew-info">
+              <div class="crew-info-content">
+                <img src="images/astronaute.jpg" alt="AstronautCrew" height="230px">
+                <h3>Thomas Pesquet</h3>
+                <p>The French astronaut who participated in the space mission aboard the ISS will be in the same ship as you !</p>
+              </div>
+              <div class="crew-info-content">
+                <img src="images/1200px-Neil_Armstrong_pose.jpg" alt="AstronautCrew" height="230px" width="230px">
+               <h3>Neil Armstrong</h3>
+               <p>The American who walked on the Moon was revived just for YOU. He will be the captain of the ship during your trip.</p>
+              </div>
+              
+              <div class="crew-info-content">
+                <img src="images/Luca_Parmitano_EMU.jpg" alt="AstronautCrew" height="230px" width="230px">
+               <h3>Samantha Cristo</h3>
+               <p>The Italian will be the second of the ship. Thanks to his origins and his remarkable skills in cooking, you will be entitled to the best pasta in space !</p>
+              </div>
+             
+            </div>
+          </section>
+    </main>
+</body>
+
 </html>
