@@ -8,12 +8,7 @@ const buttonClose = document.querySelectorAll(".button-close");
 const divSpaceship = document.querySelectorAll(".div-spaceship-content");
 const trigger = document.querySelectorAll(".trigger-spaceship");
 
-console.log(trigger);
 
-/*const textReactor = document.querySelector(".reactor");
-reactor.addEventListener("click", function(e){
-  textReactor.classList.add("hidden");
-});*/
 
 function divSpaceshipReaveal(i){
   trigger[i].addEventListener("click",function(e){
