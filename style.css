@@ -540,12 +540,12 @@ button:hover p {
 svg{
   z-index: 2;
 }
-.reactor h2{
+.div-spaceship-content h2{
   font-size: calc(0.6vw + 0.6em);
   text-align: left;
   margin-left: 0.5em;
 }
-.reactor p{
+.div-spaceship-content p{
   font-size: calc(0.4vw + 0.4em);
   text-align: left;
   margin-left: 1em;
@@ -561,7 +561,18 @@ svg{
 .trigger-spaceship:hover {
   fill: white;
 }
-
+.cabine{
+  top: 25%;
+  right: 6%;
+}
+.rocket-launcher{
+  top: 60%;
+  right: 3%;
+}
+.autre{
+  top: 55%;
+  left: 3%;
+}
 /* ------ THE CREW -----*/
 #crew{
   font-family: "Saira", sans-serif;

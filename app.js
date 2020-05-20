@@ -23,3 +23,12 @@ function buttonCloseSection(i){
   
   divSpaceshipReaveal(0);
   buttonCloseSection(0);
+
+  divSpaceshipReaveal(1);
+  buttonCloseSection(1);
+
+  divSpaceshipReaveal(2);
+  buttonCloseSection(2);
+
+  divSpaceshipReaveal(3);
+  buttonCloseSection(3);
