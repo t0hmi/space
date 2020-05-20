@@ -9,8 +9,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Anton';
-  letter-spacing: 0.1em;
+  font-family: 'Saira';
+  letter-spacing: -0.1em;
 }
 
 header img {
