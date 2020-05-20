@@ -10,19 +10,21 @@ const trigger = document.querySelectorAll(".trigger-spaceship");
 
 console.log(trigger);
 
-const textReactor = document.querySelector(".reactor");
+/*const textReactor = document.querySelector(".reactor");
 reactor.addEventListener("click", function(e){
   textReactor.classList.add("hidden");
-  console.log("coucou");
-});
+});*/
 
 function divSpaceshipReaveal(i){
-
+  trigger[i].addEventListener("click",function(e){
+  divSpaceship[i].classList.add("hidden");
+  })
 }
 function buttonCloseSection(i){
   let section = buttonClose[i].parentNode;
   buttonClose[i].addEventListener("click",function(e){
   section.classList.remove("hidden");
   });}
-
+  
+  divSpaceshipReaveal(0);
   buttonCloseSection(0);
