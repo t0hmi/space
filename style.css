@@ -499,7 +499,7 @@ button:hover p {
   text-align: left;
   font-size: calc(0.2vw + 0.2em);
 }
-.reactor{
+.div-spaceship-content{
   visibility: hidden;
   opacity: 0;
   font-family: 'sairalight';
@@ -509,11 +509,10 @@ button:hover p {
   z-index: 2;
   background-color: white;
   border-radius: 20px;
-  top: 10%;
-  left: 5%;
+  
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4), -10px -10px 10px rgba(255, 255, 255, 0.25), inset 10px 10px 20px rgba(255, 255, 255, 0.25), inset -10px -10px 20px rgba(0, 0, 0, 0.25);
 }
-.reactor button{
+.div-spaceship-content button{
   border: none;
   background-color: white;
   color: #FF3E3E;
@@ -524,9 +523,15 @@ button:hover p {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.reactor button:hover{
+.div-spaceship-content button:hover{
   color: black;
-
+}
+.reactor{
+  top: 10%;
+  left: 5%;
+}
+.fa-times-circle{
+  pointer-events: none;
 }
 .hidden{
   visibility: visible ;
@@ -549,6 +554,14 @@ svg{
   margin-bottom: 1.5em;
   border-left: solid #ff3e3e 3px;
 }
+.trigger-spaceship{
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.trigger-spaceship:hover {
+  fill: white;
+}
+
 /* ------ THE CREW -----*/
 #crew{
   font-family: "Saira", sans-serif;
