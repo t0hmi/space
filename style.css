@@ -1,9 +1,8 @@
-
 /*--- font import ---*/
 @font-face {
-  font-family: 'sairalight';
-  src: url('/fonts/light/saira-light-webfont.woff') format('woff'),
-       url('/fonts/light/saira-light-webfont.woff2') format('woff2');
+  font-family: "sairalight";
+  src: url("/fonts/light/saira-light-webfont.woff") format("woff"),
+    url("/fonts/light/saira-light-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -19,14 +18,13 @@ body {
   padding: 0;
 }
 
-
 header {
   background-color: #000;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Saira';
+  font-family: "Saira";
   letter-spacing: -0.1em;
 }
 
@@ -61,12 +59,12 @@ header img {
 
 .web nav ul li::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 100%;
   left: 0;
   width: 100%;
   height: 2px;
-  background: #FF3E3E;
+  background: #ff3e3e;
   transform: scale(0);
   transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -100,7 +98,7 @@ header img {
   display: none;
 }
 
-.burgerMenu input+label {
+.burgerMenu input + label {
   position: fixed;
   top: 40px;
   right: 40px;
@@ -109,7 +107,7 @@ header img {
   z-index: 5;
 }
 
-.burgerMenu input+label span {
+.burgerMenu input + label span {
   position: absolute;
   width: 100%;
   height: 3px;
@@ -118,14 +116,14 @@ header img {
   left: 0;
   display: block;
   background: white;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.burgerMenu input+label span:first-child {
+.burgerMenu input + label span:first-child {
   top: 0px;
 }
 
-.burgerMenu input+label span:last-child {
+.burgerMenu input + label span:last-child {
   top: 19px;
 }
 
@@ -133,22 +131,22 @@ header img {
   cursor: pointer;
 }
 
-.burgerMenu input:checked+label span {
+.burgerMenu input:checked + label span {
   opacity: 0;
   top: 50%;
 }
 
-.burgerMenu input:checked+label span:first-child {
+.burgerMenu input:checked + label span:first-child {
   opacity: 1;
   transform: rotate(405deg);
 }
 
-.burgerMenu input:checked+label span:last-child {
+.burgerMenu input:checked + label span:last-child {
   opacity: 1;
   transform: rotate(-405deg);
 }
 
-.burgerMenu input~nav {
+.burgerMenu input ~ nav {
   background: black;
   position: fixed;
   top: 0;
@@ -156,12 +154,12 @@ header img {
   width: 100%;
   height: 100px;
   z-index: 4;
-  transition: .5s;
-  transition-delay: .5s;
+  transition: 0.5s;
+  transition-delay: 0.5s;
   overflow: hidden;
 }
 
-.burgerMenu input~nav>ul {
+.burgerMenu input ~ nav > ul {
   text-align: center;
   position: absolute;
   top: 20%;
@@ -169,14 +167,14 @@ header img {
   right: 20%;
 }
 
-.burgerMenu input~nav>ul>li {
+.burgerMenu input ~ nav > ul > li {
   list-style: none;
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
   transition-delay: 0s;
 }
 
-.burgerMenu input~nav>ul>li>a {
+.burgerMenu input ~ nav > ul > li > a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -185,33 +183,17 @@ header img {
   padding: 30px;
 }
 
-.burgerMenu input:checked~nav {
+.burgerMenu input:checked ~ nav {
   height: 100%;
   transition-delay: 0s;
 }
 
-.burgerMenu input:checked~nav>ul>li {
+.burgerMenu input:checked ~ nav > ul > li {
   opacity: 1;
-  transition-delay: .5s;
+  transition-delay: 0.5s;
 }
 
-@media (max-width: 600px) {
-  .burgerMenu {
-    display: inline;
-  }
-
-  .web {
-    display: none;
-  }
-
-  header img {
-    position: fixed;
-    top: 0;
-    height: 100px;
-  }
-}
 /* ----------------*/
-
 
 .space-background {
   position: absolute;
@@ -359,7 +341,7 @@ button:hover p {
   background-repeat: no-repeat;
 }
 
-.img-fond{
+.img-fond {
   position: relative;
   top: -120vh;
   z-index: -1;
@@ -499,23 +481,26 @@ button:hover p {
   text-align: left;
   font-size: calc(0.2vw + 0.2em);
 }
-.div-spaceship-content{
+.div-spaceship-content {
   visibility: hidden;
   opacity: 0;
-  font-family: 'sairalight';
-  transition: all 0.5s ease ;
+  font-family: "sairalight";
+  transition: all 0.5s ease;
   width: 40%;
   position: absolute;
   z-index: 2;
   background-color: white;
   border-radius: 20px;
-  
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4), -10px -10px 10px rgba(255, 255, 255, 0.25), inset 10px 10px 20px rgba(255, 255, 255, 0.25), inset -10px -10px 20px rgba(0, 0, 0, 0.25);
+
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4),
+    -10px -10px 10px rgba(255, 255, 255, 0.25),
+    inset 10px 10px 20px rgba(255, 255, 255, 0.25),
+    inset -10px -10px 20px rgba(0, 0, 0, 0.25);
 }
-.div-spaceship-content button{
+.div-spaceship-content button {
   border: none;
   background-color: white;
-  color: #FF3E3E;
+  color: #ff3e3e;
   font-size: calc(0.4vw + 0.4em);
   position: absolute;
   top: 13%;
@@ -523,29 +508,29 @@ button:hover p {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.div-spaceship-content button:hover{
+.div-spaceship-content button:hover {
   color: black;
 }
-.reactor{
+.reactor {
   top: 10%;
   left: 5%;
 }
-.fa-times-circle{
+.fa-times-circle {
   pointer-events: none;
 }
-.hidden{
-  visibility: visible ;
+.hidden {
+  visibility: visible;
   opacity: 1;
 }
-svg{
+svg {
   z-index: 2;
 }
-.div-spaceship-content h2{
+.div-spaceship-content h2 {
   font-size: calc(0.6vw + 0.6em);
   text-align: left;
   margin-left: 0.5em;
 }
-.div-spaceship-content p{
+.div-spaceship-content p {
   font-size: calc(0.4vw + 0.4em);
   text-align: left;
   margin-left: 1em;
@@ -554,34 +539,33 @@ svg{
   margin-bottom: 1.5em;
   border-left: solid #ff3e3e 3px;
 }
-.trigger-spaceship{
+.trigger-spaceship {
   transition: all 0.5s ease;
   cursor: pointer;
 }
 .trigger-spaceship:hover {
   fill: white;
 }
-.cabine{
+.cabine {
   top: 25%;
   right: 6%;
 }
-.rocket-launcher{
+.rocket-launcher {
   top: 60%;
   right: 3%;
 }
-.autre{
+.autre {
   top: 55%;
   left: 3%;
 }
 /* ------ THE CREW -----*/
-#crew{
+#crew {
   font-family: "Saira", sans-serif;
 }
 #crew h1 {
   color: #ff3e3e;
   text-align: center;
   font-size: 3vw;
-  
 }
 
 .crew-info {
@@ -635,16 +619,87 @@ svg{
 
 .crew .card .card-PP img {
   border-radius: 50%;
-  border: 2px solid #FF3E3E;
+  border: 2px solid #ff3e3e;
 }
 
 .crew .card .card-text {
   width: 100%;
   height: 200px;
-  background-color: #FF3E3E;
+  background-color: #ff3e3e;
 }
+@media (max-width: 600px) {
+  .burgerMenu {
+    display: inline;
+  }
 
-@media screen and (min-width:1200px){
+  .web {
+    display: none;
+  }
+
+  header img {
+    position: fixed;
+    top: 0;
+    height: 100px;
+  }
+  .div-spaceship-content {
+    height: 100vh;
+    width: 100%;
+    border-radius: 0%;
+    box-shadow: none;
+    margin: none;
+    padding: none;
+    background-color: #ff3e3e;
+  }
+  .div-spaceship-content h2 {
+    text-align: left;
+    align-self: flex-start;
+    font-size: calc(5vw + 2em);
+    color: white;
+  }
+  .div-spaceship-content p {
+    font-size: calc(1.5vw + 1em);
+  }
+  .div-spaceship-content button {
+    background-color: #ff3e3e;
+    color: black;
+    font-size: 10vw;
+  }
+  .reactor,
+  .rocket-launcher,
+  .autre,
+  .cabine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0;
+  }
+  aside {
+    display: none;
+  }
+  .txt-homepage {
+    width: 70%;
+    margin-left: 5px;
+  }
+  .txt-homepage h2 {
+    font-size: calc(1.5vw + 1em);
+    margin-bottom: 3em;
+  }
+  .txt-homepage h1 {
+    width: 100%;
+    margin-left: 0;
+    font-size: calc(2.5vw + 1.8em);
+  }
+  .txt-homepage button {
+    align-self: center;
+  }
+  .mars {
+    margin-top: 3em;
+  }
+}
+@media screen and (min-width: 1200px) {
   .spacship-info-content:nth-child(2) {
     border-left: #000000 solid 4px;
     border-right: #000000 solid 4px;
@@ -652,4 +707,3 @@ svg{
     border-bottom: none;
   }
 }
-
