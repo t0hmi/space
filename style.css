@@ -325,13 +325,17 @@ button:hover p {
   color: white;
   cursor: pointer;
   background: #000000;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.3),
+  transition: all ease 0.5s;
+  /* box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.3),
     5px 5px 15px rgba(0, 0, 0, 0.3), inset 5px 5px 10px rgba(255, 255, 255, 0.3);
-  border-radius: 30px;
+  border-radius: 30px;*/
+
   padding: 1em;
   width: 80px;
 }
-
+.mars-text button:hover {
+  box-shadow: rgb(32, 32, 32) 0 0 15px 0px;
+}
 /* ----- TRIP ----- */
 .trip {
   margin-top: 10em;
@@ -455,31 +459,32 @@ button:hover p {
 .spaceship-info {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
+  background-color: white;
+  box-shadow: #ff3e3e 0px 0px 20px;
+  border-radius: 20px;
 }
 
 .spacship-info-content {
-  width: 300px;
+  width: 25%;
   margin: 0.5em;
   padding: 0.5em;
 }
 
-.spacship-info-content:nth-child(2) {
+/*.spacship-info-content:nth-child(2) {
   border-top: #000000 solid 4px;
   border-bottom: #000000 solid 4px;
-}
+}*/
 
 .spacship-info-content h3 {
   color: #ff3e3e;
   font-size: calc(0.5vw + 0.5em);
-  text-shadow: black 0 0 1px;
+  text-shadow: #ff3e3e 0px 0px 5px;
 }
-
 .spacship-info-content p {
   margin: 0.1em;
   text-align: left;
-  font-size: calc(0.2vw + 0.2em);
+  font-size: calc(0.2vw + 0.3em);
 }
 .div-spaceship-content {
   visibility: hidden;
