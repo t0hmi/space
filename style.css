@@ -7,6 +7,9 @@
   font-style: normal;
 }
 
+*:focus {
+  outline: none;
+}
 body {
   margin: 0;
   padding: 0;
@@ -230,6 +233,7 @@ aside .fa-paper-plane {
   color: white;
   padding: 1em;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 aside .fa-twitter-square:hover,
@@ -318,7 +322,10 @@ button:hover p {
   width: 40%;
   font-size: 1.5em;
 }
-
+.mars-text button a {
+  color: white;
+  text-decoration: none;
+}
 .mars-text button {
   align-self: left;
   margin-top: 20px;
@@ -342,7 +349,7 @@ button:hover p {
 }
 /* ----- TRIP ----- */
 .trip {
-  margin-top: 10em;
+  margin-top: 15em;
   font-family: "sairalight", sans-serif;
   background: url(images/fond5.png);
   background-position: center;
@@ -409,7 +416,7 @@ button:hover p {
   justify-content: space-around;
   align-items: center;
   height: 60px;
-  background: black;
+  background: white;
   transition: all 0.5s ease;
   color: white;
 }
@@ -423,13 +430,17 @@ button:hover p {
   height: 30px;
   cursor: pointer;
   border-radius: 20px;
+  padding: 15px;
   border: none;
   background-color: #ff3e3e;
   color: white;
   transition: all 0.5s ease;
   opacity: 1;
 }
-
+.buy button a {
+  color: white;
+  text-decoration: none;
+}
 .fa-shopping-cart {
   transition: all 0.5s ease;
   margin-left: 5px;
@@ -485,12 +496,12 @@ button:hover p {
 .spacship-info-content p {
   margin: 0.1em;
   text-align: left;
-  font-size: calc(0.2vw + 0.3em);
+  font-size: calc(0.2vw + 0.2em);
 }
 .spacship-info-content ul li {
   list-style: none;
   text-align: left;
-  font-size: calc(0.4vw + 0.3em);
+  font-size: calc(0.4vw + 0.2em);
   position: relative;
 }
 .spacship-info-content ul li::before {
@@ -650,7 +661,7 @@ svg {
 }
 /*-- form --*/
 .form-div {
-  margin-top: 15em;
+  margin-top: 20em;
   height: 60vh;
   background-color: #ff3e3e;
   display: flex;
@@ -776,6 +787,13 @@ svg {
     opacity: 0;
     display: none;
   }
+}
+.form-div h1 {
+  position: absolute;
+  top: -3em;
+  color: black;
+  left: 2em;
+  font-size: 4em;
 }
 @media (max-width: 600px) {
   .burgerMenu {

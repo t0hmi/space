@@ -42,7 +42,7 @@ btnSend.addEventListener("click", function (e) {
     console.log(element.value);
     if (element.value == "") {
       element.style.backgroundColor = "#FF3E3E";
-      element.placeholder = "require";
+      element.placeholder = "required";
       btnSend.disabled = true;
     } else if (element.value != "") {
       element.style.backgroundColor = "white";

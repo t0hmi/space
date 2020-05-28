@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -78,13 +79,13 @@
           <div class="mars-image"></div>
           <div class="mars-text">
             <p>Mars is now available in our space tour !</p>
-            <button>Book</button>
+            <button><a href="#trip">Book</a> </button>
           </div>
           <div class="block b1"></div>
           <div class="block b2"></div>
         </div>
       </section>
-      <section class="trip">
+      <section class="trip" id="trip">
         <h1>The trip</h1>
         <div class="container">
           <div class="card">
@@ -103,7 +104,7 @@
               </p>
             </div>
             <div class="buy">
-              <button>Buy now <i class="fas fa-shopping-cart"></i></button>
+              <button><a href="#form"> Buy now <i class="fas fa-shopping-cart"></i></a></button>
             </div>
           </div>
           <div class="card">
@@ -126,7 +127,7 @@
               </p>
             </div>
             <div class="buy">
-              <button>Buy now <i class="fas fa-shopping-cart"></i></button>
+              <button><a href="#form"> Buy now <i class="fas fa-shopping-cart"></i></a></button>
             </div>
           </div>
           <div class="card">
@@ -145,7 +146,9 @@
               </p>
             </div>
             <div class="buy">
-              <button>Buy now <i class="fas fa-shopping-cart"></i></button>
+              <button ">
+               <a href="#form">Buy now <i class="fas fa-shopping-cart"></i></a> </i>
+              </button>
             </div>
           </div>
 
@@ -154,15 +157,16 @@
       </section>
       <section class="spaceShip">
         <div class="reactor div-spaceship-content">
-          <h2>Reactor</h2>
+          <h2>External tank</h2>
           <button class="button-close">
             <i class="far fa-times-circle"></i>
           </button>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
-            dolorum voluptate, a inventore sequi quae placeat exercitationem
-            saepe mollitia iure sit ex aperiam excepturi consectetur veritatis
-            corporis atque reiciendis adipisci.
+            The Space Shuttle external tank is the component of the Space
+            Shuttle launch vehicle that contained the liquid hydrogen fuel and
+            liquid oxygen oxidizer. During lift-off and ascent it supplied the
+            fuel and oxidizer under pressure to the three RS-25 main engines in
+            the orbiter.
           </p>
         </div>
         <div class="cabine div-spaceship-content">
@@ -171,34 +175,43 @@
             <i class="far fa-times-circle"></i>
           </button>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
-            dolorum voluptate, a inventore sequi quae placeat exercitationem
-            saepe mollitia iure sit ex aperiam excepturi consectetur veritatis
-            corporis atque reiciendis adipisci.
+            The three-level crew compartment is constructed of 2219 aluminum
+            alloy plate with integral stiffening stringers and internal framing
+            welded together to create a pressure-tight vessel. The compartment
+            has a side hatch for normal ingress and egress, a hatch into the
+            airlock from the middeck, and a hatch from the airlock through the
+            aft bulkhead into the payload bay for extravehicular activity and
+            payload bay access.
           </p>
         </div>
         <div class="rocket-launcher div-spaceship-content">
-          <h2>Rocket launcher</h2>
+          <h2>Main engine</h2>
           <button class="button-close">
             <i class="far fa-times-circle"></i>
           </button>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
-            dolorum voluptate, a inventore sequi quae placeat exercitationem
-            saepe mollitia iure sit ex aperiam excepturi consectetur veritatis
-            corporis atque reiciendis adipisci.
+            The Space Shuttle use a cluster of three RS-25 engines mounted in
+            the stern structure of the orbiter, with fuel being drawn from the
+            external tank. The engines are use for propulsion during the
+            entirety of the spacecraft's ascent, with additional thrust being
+            provided by two solid rocket boosters and the orbiter's two AJ10
+            orbital maneuvering system engines. Following each flight, the RS-25
+            engines are removed from the orbiter, inspected, and refurbished
+            before being reused on another mission.
           </p>
         </div>
         <div class="autre div-spaceship-content">
-          <h2>Autre truc</h2>
+          <h2>Rocket booster</h2>
           <button class="button-close">
             <i class="far fa-times-circle"></i>
           </button>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
-            dolorum voluptate, a inventore sequi quae placeat exercitationem
-            saepe mollitia iure sit ex aperiam excepturi consectetur veritatis
-            corporis atque reiciendis adipisci.
+            The Space Shuttle Solid Rocket Booster (Space Shuttle SRB) was the
+            first solid-propellant rocket to be used for primary propulsion on a
+            vehicle used for human spaceflight and provided the majority of the
+            Space Shuttle's thrust during the first two minutes of flight. After
+            burnout, they were jettisoned and parachuted into the Atlantic Ocean
+            where they were recovered, examined, refurbished, and reused.
           </p>
         </div>
 
@@ -428,7 +441,9 @@
           </div>
         </div>
       </section>
-      <section class="form-div">
+
+      <section class="form-div" id="form">
+        <h1>Contact</h1>
         <form>
           <h3>NAME <span>*</span></h3>
           <input type="text" />
@@ -441,7 +456,7 @@
             <i class="fas fa-rocket" style="transform: rotate(315deg);"></i>
             <i class="fas fa-check"></i>
           </button>
-          <p>The field with <strong>*</strong> are require</p>
+          <p>The field with <strong>*</strong> are required</p>
         </form>
       </section>
     </main>
