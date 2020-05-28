@@ -561,6 +561,7 @@ svg {
   font-size: calc(0.6vw + 0.6em);
   text-align: left;
   margin-left: 0.5em;
+  font-family: "sairalight";
 }
 .div-spaceship-content p {
   font-size: calc(0.4vw + 0.4em);
@@ -570,6 +571,7 @@ svg {
   margin-right: 1em;
   margin-bottom: 1.5em;
   border-left: solid #ff3e3e 3px;
+  font-family: "sairalight";
 }
 .trigger-spaceship {
   transition: all 0.5s ease;
@@ -794,6 +796,7 @@ svg {
   color: black;
   left: 2em;
   font-size: 4em;
+  font-family: "sairalight";
 }
 @media (max-width: 600px) {
   .burgerMenu {
